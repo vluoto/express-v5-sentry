@@ -1,6 +1,7 @@
 # express-v5-sentry
 
 - Node.js v22
+- ESM
 - Express v5
 - Sentry JavaScript SDK v8
 
