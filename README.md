@@ -41,6 +41,7 @@ index 1c666d1..c35299c 100644
 
    // Add Tracing by setting tracesSampleRate
    // We recommend adjusting this value in production
+
 ```
 
 and try running the app again, you'll get a different warning:
