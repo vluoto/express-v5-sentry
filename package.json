@@ -1,0 +1,11 @@
+{
+  "name": "express-v5-sentry",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "dependencies": {
+    "@sentry/node": "^8.48.0",
+    "@sentry/profiling-node": "^8.48.0",
+    "express": "^5.0.1"
+  }
+}
