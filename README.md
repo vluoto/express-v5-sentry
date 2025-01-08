@@ -13,8 +13,6 @@ npm install
 node --import ./instrument.js .
 ```
 
-Output:
-
 ```
 [Sentry] express is not instrumented. This is likely because you required/imported express before calling `Sentry.init()`.
 👂
@@ -55,8 +53,6 @@ and try running the app again, you'll get a different warning:
 node --import ./instrument.js .
 ```
 
-Output:
-
 ```
 [Sentry] express is not instrumented. Please make sure to initialize Sentry in a separate file that you `--import` when running node, see: https://docs.sentry.io/platforms/javascript/guides/express/install/esm/.
 👂
@@ -86,8 +82,6 @@ and try running the app once more, you'll get no warning:
 ```shell
 node --import ./instrument.js .
 ```
-
-Output:
 
 ```
 👂
