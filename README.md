@@ -8,9 +8,14 @@
 Run the app:
 
 ```shell
-$ nvm use
-$ npm install
-$ node --import ./instrument.js .
+nvm use
+npm install
+node --import ./instrument.js .
+```
+
+Output:
+
+```
 [Sentry] express is not instrumented. This is likely because you required/imported express before calling `Sentry.init()`.
 👂
 ```
@@ -47,7 +52,12 @@ index 1c666d1..c35299c 100644
 and try running the app again, you'll get a different warning:
 
 ```shell
-$ node --import ./instrument.js .
+node --import ./instrument.js .
+```
+
+Output:
+
+```
 [Sentry] express is not instrumented. Please make sure to initialize Sentry in a separate file that you `--import` when running node, see: https://docs.sentry.io/platforms/javascript/guides/express/install/esm/.
 👂
 ```
@@ -74,6 +84,11 @@ index c35299c..e774a90 100644
 and try running the app once more, you'll get no warning:
 
 ```shell
-$ node --import ./instrument.js .
+node --import ./instrument.js .
+```
+
+Output:
+
+```
 👂
 ```
