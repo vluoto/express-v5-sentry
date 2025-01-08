@@ -1,7 +1,6 @@
 {
   "name": "express-v5-sentry",
   "version": "1.0.0",
-  "main": "index.js",
   "type": "module",
   "dependencies": {
     "@sentry/node": "^8.48.0",
